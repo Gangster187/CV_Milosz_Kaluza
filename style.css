@@ -35,10 +35,6 @@ body {
     margin-top: 20px; /* Dla odstępu od poprzednich sekcji */
 }
 
-.left, .right {
-    flex: 1;
-}
-
 .full-width {
     flex-basis: 100%;
 }
