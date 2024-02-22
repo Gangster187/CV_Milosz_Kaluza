@@ -3,7 +3,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f7f7f7;
+    background-color: #c9dff6;
     font-family: "Raleway", sans-serif;
 }
 
@@ -15,6 +15,20 @@ body {
     padding: 20mm;
     margin: 10mm auto;
     box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 28px; /* Większy rozmiar dla tytułu */
+    /* pozostałe style */
+}
+
+.header p {
+    font-size: 16px;
+}
+
+.section h2 {
+    color: #0056b3; /* Dodany kolor dla nagłówków sekcji */
+    /* pozostałe style */
 }
 
 .container {
