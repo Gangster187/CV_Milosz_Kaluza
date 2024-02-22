@@ -29,12 +29,6 @@ body {
     color: #0056b3;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 1.4;
-}
-
 .container2 {
     display: flex;
     justify-content: space-between;
@@ -159,7 +153,33 @@ a:hover {
     color: #0056b3; /* Kolor tekstu */
 }
 
-.speak_section {
+.speak_section, .certyfikate_section {
+    flex: 1; /* Każdy kontener zajmie połowę przestrzeni */
+    margin: 0 10px; /* Marginesy z boków, można dostosować według potrzeb */
+    padding: 20px; /* Odstępy wewnętrzne */
+    background-color: #f2f2f2; /* kolor tła */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* cień dla efektu głębi */
+    border-radius: 10px; /* zaokrąglone rogi */
+    text-align: left;
+}
+
+.speak-certyfikate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Dla odstępu od poprzednich sekcji */
+}
+
+.speak_section h2 {
+    margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+    color: #0056b3; /* Kolor tekstu */
+}
+
+.certyfikate_section h2 {
+    margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+    color: #0056b3; /* Kolor tekstu */
+}
+
+.technology {
     width: 100%; /* Ustaw szerokość na 100% */
     max-width: 600px; /* Maksymalna szerokość kontenera */
     background-color: #f2f2f2; /* Wyróżnienie tła kontenera */
@@ -168,10 +188,10 @@ a:hover {
     margin-top: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Subtelny cień dla wyróżnienia */
     border-radius: 10px; /* Zaokrąglone rogi kontenera */
-    text-align: left;
+    text-align: justify;
 }
 
-.speak_section h2 {
+.technology h2 {
     margin-bottom: 15px; /* Odstęp pod nagłówkiem */
     color: #0056b3; /* Kolor tekstu */
 }
