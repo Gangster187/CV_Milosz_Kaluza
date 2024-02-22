@@ -37,8 +37,8 @@ body {
 
 .container2 {
     display: flex;
-    flex-wrap: wrap;
-    line-height: 1.4;
+    justify-content: space-between;
+    margin-top: 20px; /* Dla odstępu od poprzednich sekcji */
 }
 
 .left, .right {
@@ -90,6 +90,7 @@ a:hover {
     border-radius: 5px;
     transition: background-color 0.3s;
     box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     font-size: 14px;
     overflow: hidden;
     white-space: nowrap;
@@ -138,4 +139,39 @@ a:hover {
     color: #0056b3; /* Kolor tekstu */
 }
 
+.exp_section, .edu_section {
+    flex: 1; /* Każdy kontener zajmie połowę przestrzeni */
+    margin: 0 10px; /* Marginesy z boków, można dostosować według potrzeb */
+    padding: 20px; /* Odstępy wewnętrzne */
+    background-color: #f2f2f2; /* kolor tła */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* cień dla efektu głębi */
+    border-radius: 10px; /* zaokrąglone rogi */
+    text-align: left;
+}
 
+.exp_section h2 {
+    margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+    color: #0056b3; /* Kolor tekstu */
+}
+
+.edu_section h2 {
+    margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+    color: #0056b3; /* Kolor tekstu */
+}
+
+.speak_section {
+    width: 100%; /* Ustaw szerokość na 100% */
+    max-width: 600px; /* Maksymalna szerokość kontenera */
+    background-color: #f2f2f2; /* Wyróżnienie tła kontenera */
+    padding: 20px; /* Odstępy wewnątrz kontenera */
+    margin: auto; /* Automatyczne marginesy dla wyśrodkowania */
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Subtelny cień dla wyróżnienia */
+    border-radius: 10px; /* Zaokrąglone rogi kontenera */
+    text-align: left;
+}
+
+.speak_section h2 {
+    margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+    color: #0056b3; /* Kolor tekstu */
+}
