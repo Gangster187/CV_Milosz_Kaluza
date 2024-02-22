@@ -70,15 +70,15 @@ a:hover {
 }
 
 .btn {
-    display: inline-block;
-    width: 110px;
-    height: 25px;
-    line-height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px; /* Możesz dostosować szerokość do swoich potrzeb */
+    height: 30px; /* Wysokość została dostosowana, aby pomieścić tekst i ikonę */
     padding: 10px;
     margin: 2px;
     background-color: #007bff;
     color: white;
-    text-align: center;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -89,10 +89,19 @@ a:hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    /* Usunięto niepotrzebne właściwości jak line-height i text-align */
 }
 
 .btn:hover {
     background-color: #0056b3; 
+}
+
+.button_section {
+    display: flex;
+    justify-content: center; /* Centruje przyciski w poziomie */
+    flex-wrap: wrap; /* Pozwala na przechodzenie elementów do nowej linii, jeśli nie mieszczą się */
+    gap: 10px; /* Odstęp między przyciskami */
+    margin-top: 10px; /* Odstęp od poprzedzającego tekstu */
 }
 
 .kontakt_section {
@@ -114,6 +123,10 @@ a:hover {
 
 .kontakt_section p {
     margin-bottom: 10px; /* Odstępy między elementami */
+}
+
+.kontakt_section i {
+    margin-right: 10px;
 }
 
 .about_section {
@@ -194,4 +207,13 @@ a:hover {
 .technology h2 {
     margin-bottom: 15px; /* Odstęp pod nagłówkiem */
     color: #0056b3; /* Kolor tekstu */
+}
+
+.technology li {
+    list-style: none; /* Usuwa standardowe punktory */
+    margin-bottom: 10px; /* Dodaje odstęp między elementami listy */
+}
+
+.technology li i {
+    margin-right: 10px;
 }
