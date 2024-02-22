@@ -1,12 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,600,600i);
 
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #daf5fc;
+    background-color: #f7f7f7;
+    font-family: "Raleway", sans-serif;
 }
 
 .paper {
-    width: 310mm;
+    max-width: 800px;
     min-height: 297mm;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
