@@ -76,3 +76,28 @@ a {
 a:hover {
     color: orange; /* Kolor tekstu linku po najechaniu */
 }
+
+.btn {
+    display: inline-block;
+    width: 110px; /* ustalona szerokość */
+    height: 25px; /* ustalona wysokość */
+    line-height: 5px;
+    padding: 10px;
+    margin: 2px; /* zmniejszony odstęp */
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* upewnij się, że padding i border są zawarte w width i height */
+    font-size: 14px; /* ustalona wielkość czcionki */
+    overflow: hidden; /* zapobiega wychodzeniu tekstu poza przycisk */
+    white-space: nowrap; /* tekst nie przechodzi na następną linię */
+    text-overflow: ellipsis; /* dodaje "..." jeśli tekst jest zbyt długi */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Ciemniejszy niebieski kolor tła przy najechaniu */
+}
