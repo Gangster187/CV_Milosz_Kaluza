@@ -17,6 +17,11 @@ body {
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+}
+
 .header h1 {
     font-size: 28px;
 }
@@ -25,18 +30,10 @@ body {
     font-size: 16px;
 }
 
-.section h2 {
-    color: #0056b3;
-}
-
 .container2 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px; /* Dla odstępu od poprzednich sekcji */
-}
-
-.full-width {
-    flex-basis: 100%;
 }
 
 .profile-img {
@@ -46,23 +43,6 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
-}
-
-.header {
-    display: flex;
-    align-items: center;
-}
-
-.section {
-    margin-top: 20px;
-}
-
-a {
-    color: black;
-}
-
-a:hover {
-    color: orange;
 }
 
 .btn {
